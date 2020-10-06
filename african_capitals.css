@@ -1,0 +1,49 @@
+body {
+    background-color: #ccc;
+}
+
+
+
+
+
+#capital {
+    font-size: 2.2em;
+    color: #eee;
+    background-color: #24272c;
+}
+#input_one {
+    border: none;
+    height: 1.5rem;
+    padding: 7px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#input_one:hover {
+ border-bottom: 2px dotted steelblue;
+ margin-bottom: 20px;
+ transition: scale(1.1);
+}
+#input_one::placeholder {
+    color: #999;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: fixed;
+    bottom: 25px;
+}
+#footer {
+    bottom: 0;
+    font-size: 1.1rem;
+    color: #888;
+    left: 15px;
+    text-align: center;
+}
+[type="submit"] {
+    background-color: steelblue;
+    color: #fff;
+    width: 7rem;
+    padding: 7px;
+}
