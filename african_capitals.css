@@ -9,6 +9,7 @@ body {
     background-size: cover;
     position: relative;
     padding: 0;
+    margin: 0;
     animation-name: anim;
     animation-duration: 30s;
     animation-timing-function: ease;
@@ -152,5 +153,11 @@ a {
     }
 }
 @media screen and (max-width: 460px) {
+    body {
+        max-width: 100vw;
+    }
+    header {
+        margin-top: -15px;
+    }
 
 }
