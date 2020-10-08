@@ -20,9 +20,11 @@ body {
 
 #capital {
     font-size: 2.1rem;
-    margin-top: 2.0rem;
-    color: #579;
-    background-color: #eff;
+    margin: 0 auto;
+    margin-right: 10px;
+    /* padding: 5px; */
+    color: #569;
+    background-color: #fff;
 }
 #input_one {
     border: none;
@@ -46,7 +48,7 @@ body {
 }
 #input_one:hover::placeholder {
     color: #eee;
-    background-color: #111;
+    background-color: #333;
     width: 100%;
     position: relative;
     font-weight: 700;
@@ -60,15 +62,11 @@ p {
   
 }
 .footer {
-    position: fixed;
-    bottom: 20px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #eee;
-    left: 15px;
+    /* left: 15px; */
 }
-.footer p {
-    font-size: 0.8rem;
-}
+
 [type="submit"] {
     background-color: steelblue;
     color: #fff;
@@ -83,33 +81,28 @@ b {
     width: 100%;
     /* margin: 60px auto; */
     background-color: #222;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     opacity: 0.85;
     color: #ddd;
     padding: 20px;
     margin-left: -10px;
     margin-top: -10px;
+    margin-bottom: -30px;
     height: 100vh;
     z-index: 2;
     transition: all 2.0s ease;
 }
-.all:hover{
-    /* border-radius: 20%; */
-    /* background-color: tomato; */
-    /* font-size: 18px; */
-    /* padding: 20px; */
-}
 
 .social-icon {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 5px;
     background-color: #eee;
     border-radius: 50%;
 }
 a {
     text-decoration: none;
-    color: crimson;
+    color: green;
     font-weight: 600;
     font-size: 1.3rem;
 }
@@ -127,5 +120,8 @@ a {
         width: 50%;
         /* background-color: crimson; */
         margin: auto;
+    }
+    .all {
+        text-align: center;
     }
 }
