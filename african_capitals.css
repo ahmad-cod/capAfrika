@@ -19,7 +19,7 @@ body {
 }
 
 #capital {
-    font-size: 2.1rem;
+    font-size: 2rem;
     margin: 0 auto;
     margin-right: 10px;
     /* padding: 5px; */
@@ -28,22 +28,24 @@ body {
 }
 #input_one {
     border: none;
-    height: 1.5rem;
+    height: 1.2rem;
     padding: 7px;
     text-align: center;
-    margin: 5px 10px;
+    background-color: white;
+    border-bottom: 2px solid #777;
+    margin-bottom: 10px;
+    opacity: 1;
     transition-property: margin-bottom , margin-right;
     transition:  0.9s linear;
 }
 #input_one:hover {
- border-bottom: 2px dotted steelblue;
+ border-bottom: 2px solid steelblue;
  border-left: 2px solid steelblue;
- background-color: #cee;
  margin-bottom: 20px;
  margin-right: 20px;
  transition: scale(1.1);
 }
-#input_one::placeholder {
+/* #input_one::placeholder {
     color: #999;
 }
 #input_one:hover::placeholder {
@@ -53,7 +55,8 @@ body {
     position: relative;
     font-weight: 700;
     top: -10px;
-}
+} */
+
 
 p {
     font-size: 1.4rem;
@@ -77,6 +80,28 @@ p {
 b {
     color: steelblue;
 }
+#inpu {
+    position: relative;
+}
+#inpu label {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+
+}
+
+#inpu input:focus {
+    border: none;
+    border-bottom: 2px solid steelblue;
+}
+#inpu input:focus ~ label {
+    top: -20px;
+    color: steelblue;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 .all {
     width: 100%;
     /* margin: 60px auto; */
@@ -84,6 +109,7 @@ b {
     /* border-radius: 15px; */
     opacity: 0.85;
     color: #ddd;
+    position: absolute;
     padding: 20px;
     margin-left: -10px;
     margin-top: -10px;
@@ -124,4 +150,7 @@ a {
     .all {
         text-align: center;
     }
+}
+@media screen and (max-width: 460px) {
+
 }
