@@ -1,49 +1,131 @@
 body {
     background-color: #ccc;
+    background-image: url(img/beautifulAfrica.jpeg);
+    background-attachment: fixed;
+    background-color: #ccc; 
+    background-blend-mode: blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    animation-name: anim;
+    animation-duration: 30s;
+    animation-timing-function: ease;
+    animation-delay: .7s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    
 }
 
-
-
-
-
 #capital {
-    font-size: 2.2em;
-    color: #eee;
-    background-color: #24272c;
+    font-size: 2.1rem;
+    margin-top: 2.0rem;
+    color: #579;
+    background-color: #eff;
 }
 #input_one {
     border: none;
     height: 1.5rem;
     padding: 7px;
     text-align: center;
-    margin-bottom: 15px;
+    margin: 5px 10px;
+    transition-property: margin-bottom , margin-right;
+    transition:  0.9s linear;
 }
 #input_one:hover {
  border-bottom: 2px dotted steelblue;
+ border-left: 2px solid steelblue;
+ background-color: #cee;
  margin-bottom: 20px;
+ margin-right: 20px;
  transition: scale(1.1);
 }
 #input_one::placeholder {
     color: #999;
 }
+#input_one:hover::placeholder {
+    color: #eee;
+    background-color: #111;
+    width: 100%;
+    position: relative;
+    font-weight: 700;
+    top: -10px;
+}
 
 p {
-    font-size: 1.5em;
+    font-size: 1.4rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    position: fixed;
-    bottom: 25px;
+  
 }
-#footer {
-    bottom: 0;
-    font-size: 1.1rem;
-    color: #888;
+.footer {
+    position: fixed;
+    bottom: 20px;
+    font-size: 0.8rem;
+    color: #eee;
     left: 15px;
-    text-align: center;
+}
+.footer p {
+    font-size: 0.8rem;
 }
 [type="submit"] {
     background-color: steelblue;
     color: #fff;
-    width: 7rem;
+    width: 6rem;
+    margin: auto;
     padding: 7px;
+}
+b {
+    color: steelblue;
+}
+.all {
+    width: 100%;
+    /* margin: 60px auto; */
+    background-color: #222;
+    border-radius: 15px;
+    opacity: 0.85;
+    color: #ddd;
+    padding: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+    height: 100vh;
+    z-index: 2;
+    transition: all 2.0s ease;
+}
+.all:hover{
+    /* border-radius: 20%; */
+    /* background-color: tomato; */
+    /* font-size: 18px; */
+    /* padding: 20px; */
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+a {
+    text-decoration: none;
+    color: crimson;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+@keyframes anim {
+    0% {background-image: url(img/beautifulAfrica.jpeg);}
+    25% {background-image: url(img/afriMapCountries.jpeg);}
+    50% {background-image: url(img/richardAfrica.jpeg);}
+    75% {background-image: url(img/mapAfrikaBlue.jpeg);}
+    100% {background-image: url(img/elephAfriKilima.jpeg);}
+}
+
+@media screen and (min-width: 600px) {
+    #content {
+        width: 50%;
+        /* background-color: crimson; */
+        margin: auto;
+    }
 }
