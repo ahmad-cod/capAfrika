@@ -176,5 +176,8 @@ a {
     #inpu label {
         left: 10px;
     }
+    .all {
+        opacity: 0.75;
+    }
 
 }
