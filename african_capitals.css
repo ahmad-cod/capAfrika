@@ -38,7 +38,7 @@ body {
     border-radius: 8px 8px 0 0;
     opacity: 1;
     transition-property: margin-bottom , margin-right;
-    transition:  0.9s linear;
+    transition:  0.4s linear;
 }
 #input_one:hover {
  border-bottom: 2px solid steelblue;
@@ -57,7 +57,7 @@ body {
     position: relative;
     font-weight: 700;
     top: -10px;
-} */ */
+} */ 
 
 
 p {
